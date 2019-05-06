@@ -48,3 +48,9 @@
 # language = 1
 # print('language %s: I am Python. Whats for supper?' % (language + 10))
 # this is interesting, im not sure what the %s is for, but I see what its doing. Ill look more into this.
+
+# int('101') will converto to
+# 101
+# while int('101.0') will throw an error.
+# Use float('101.0') to convert a string to a "float"
+# just remember to use common data types and all will be good xD
