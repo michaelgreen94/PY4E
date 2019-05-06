@@ -11,6 +11,7 @@ list = [
     'thought it was gonna be day five huh?',
 ]
 print(list[4])
+# this uses [] brakets to make a list
 
 # prints value using key
 quotes = {
@@ -20,3 +21,26 @@ quotes = {
 }
 person = 'Olivia'
 print(person, 'says:', quotes[person])
+# this uses {} brackets to make a dictionary, can also create an empty dictionary using dict()
+
+# first funcitonal program from book. I didnt write this.
+import webbrowser
+import json
+from urllib.request import urlopen
+
+print('lets find an old website.')
+site = input('Type the URL: ')
+time = input('give me a year, month, day like 20150613: ')
+url = 'http://archive.org/wayback/available?url=%s&timestamp=%s' % (site, time)
+response = urlopen(url)
+contents = response.read()
+text = contents.decode('utf-8')
+data = json.loads(text)
+
+try:
+  old_site = data['archived_snapshots']['closest']['url']
+  print('Found this copy: ', old_site)
+  print('It should appear in your browser now')
+  webbrowser.open(old_site)
+except:
+  print('Sorry, no luck finding', site)
