@@ -54,3 +54,22 @@
 # while int('101.0') will throw an error.
 # Use float('101.0') to convert a string to a "float"
 # just remember to use common data types and all will be good xD
+
+# start = 'Na ' * 4 + '\n'
+# middle = 'hey ' * 3 + '\n'
+# end = 'goodbye.'
+# print(start + start + middle + end)
+# * tells it to duplicate the previous string this many times
+
+# letters = 'abcdefghijklmnopqrstuvwxyz'
+# # prints the 16th letter in the string!
+# print(letters[15])
+# # using a "-" will count from the end forward
+# print(letters[-9])
+
+name = 'Mike'
+# name = name.replace('M', 'P')
+
+name = 'P' + name[1:]
+
+print(name)
