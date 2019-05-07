@@ -67,9 +67,20 @@
 # # using a "-" will count from the end forward
 # print(letters[-9])
 
-name = 'Mike'
+# name = 'Mike'
 # name = name.replace('M', 'P')
+# name = 'P' + name[1:]
+# print(name)
 
-name = 'P' + name[1:]
+# lets try fibonacci
 
-print(name)
+
+def fib(n):
+    x, y = 0, 1
+    while x < n:
+        print(x, end=' ')
+        x, y = y, x + y
+    print()
+
+
+fib(1000)
