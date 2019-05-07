@@ -73,14 +73,9 @@
 # print(name)
 
 # lets try fibonacci
-
-
-def fib(n):
-    x, y = 0, 1
-    while x < n:
-        print(x, end=' ')
-        x, y = y, x + y
-    print()
-
-
-fib(1000)
+# def fib(n):
+#     x, y = 0, 1
+#     while x < n:
+#         print(x, end=' ')
+#         x, y = y, x + y
+# fib(1000)
