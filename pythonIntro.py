@@ -79,3 +79,29 @@
 #         print(x, end=' ')
 #         x, y = y, x + y
 # fib(1000)
+
+
+# secperhour = 60 * 60 * 60
+# secperday = secperhour * 24
+# hoursperday = secperday / secperhour
+# x = secperday // secperday
+# print(secperhour, secperday, hoursperday, x)
+
+# solve for palindrome
+# x = 0
+# palindromes = {}
+# length = int(input('how many do you want to test?: '))
+# if type(length) is int:
+#     while x < length:
+#         userInput = input('give me a word: ')
+#         reverseInput = userInput[::-1]
+#         if userInput == reverseInput:
+#             palindromes[userInput] = True
+#             print('yay you found one!')
+#         else:
+#             palindromes[userInput] = False
+#             print(reverseInput, 'isnt quite', userInput, 'backwards')
+#         x += 1
+# else:
+#     print('run me again but use a number')
+# print(palindromes)
