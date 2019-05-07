@@ -38,12 +38,12 @@
 # data = json.loads(text)
 
 # try:
-#   old_site = data['archived_snapshots']['closest']['url']
-#   print('Found this copy: ', old_site)
-#   print('It should appear in your browser now')
-#   webbrowser.open(old_site)
+#     old_site = data['archived_snapshots']['closest']['url']
+#     print('Found this copy: ', old_site)
+#     print('It should appear in your browser now')
+#     webbrowser.open(old_site)
 # except:
-#   print('Sorry, no luck finding', site)
+#     print('Sorry, no luck finding', site)
 
 # language = 1
 # print('language %s: I am Python. Whats for supper?' % (language + 10))
@@ -105,3 +105,9 @@
 # else:
 #     print('run me again but use a number')
 # print(palindromes)
+
+houses = dict()
+x = 10
+y = 20
+houses[x, y] = 'myhouse'
+print(houses)
