@@ -170,3 +170,39 @@
 # print(life.keys())
 # print(list(life['animals'].keys()))
 # print(list(life['animals']['cats']))
+
+# ways to build a list
+# firstfive = []
+# firstfive.append(1)
+# firstfive.append(2)
+# firstfive.append(3)
+# firstfive.append(4)
+# firstfive.append(5)
+# print(firstfive)
+
+# sixto10 = []
+# for number in range(6, 11):
+#     sixto10.append(number)
+# print(sixto10)
+
+# eleventofifteen = list(range(11, 16))
+# print(eleventofifteen)
+
+# next two examples are called comprehensions and are the preferred
+# way to create lists etc. on the fly.
+# sixteentothirty = [number for number in range(16, 31)]
+# print(sixteentothirty)
+
+# includethezero = [number - 1 for number in range(1, 6)]
+# print('including zero:', includethezero)
+
+# onlyOdd = [number for number in range(1, 6) if number % 2 == 1]
+# print('only odd #s:', onlyOdd)
+
+# This is the traditional way, much longer than
+# using a comprehension
+# new_list = []
+# for number in range(1,6):
+#   if number % 2 == 1:
+#     new_list.append(number)
+# print(new_list)
