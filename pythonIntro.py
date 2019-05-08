@@ -106,8 +106,67 @@
 #     print('run me again but use a number')
 # print(palindromes)
 
-houses = dict()
-x = 10
-y = 20
-houses[x, y] = 'myhouse'
-print(houses)
+# houses = dict()
+# x = 10
+# y = 20
+# houses[x, y] = 'myhouse'
+# print(houses)
+
+# years_list = [1994, 1995, 1996, 1997, 1998, 1999]
+# my_third_birthday = years_list[3]
+# oldest = years_list[-1]
+# print(years_list, my_third_birthday, oldest)
+
+# things = ['mozzarella', 'cinderella', 'salmonella']
+# print(things)
+# things[1] = things[1].capitalize()
+# things[0] = things[0].upper()
+# del things[2]
+# OR things.remove('salmonella')
+# print(things)
+
+# surprise = ['Groucho', 'Chico', 'harpo']
+# surprise[-1] = surprise[-1].lower()[::-1].capitalize()
+# print(surprise)
+
+# e2f = {
+#     'dog': 'chien',
+#     'cat': 'chat',
+#     'walrus': 'morse'
+# }
+# print(e2f['walrus'])
+
+# f2e = {}
+# for english, french in e2f.items():
+#     f2e[french] = english
+# print(f2e['chien'])
+
+# englishSet = set(e2f.keys())
+# print(englishSet)
+
+# life = dict()
+# list_of_names = ['Henri', 'Grumpy', 'Lucy']
+# animals = dict()
+# animals['cats'] = list_of_names
+# animals['octopi'] = dict()
+# animals['emus'] = dict()
+# life['animals'] = animals
+# life['plants'] = dict()
+# life['other'] = dict()
+
+# correct way
+# life = {
+#   'animals': {
+#     'cats': [
+#       'Henri', 'Grumpy', 'Lucy'
+#     ],
+#     'octopi': {},
+#     'enums': {}
+#   },
+#   'plants': {},
+#   'other': {}
+# }
+
+# print(life.keys())
+# print(list(life['animals'].keys()))
+# print(list(life['animals']['cats']))
