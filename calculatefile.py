@@ -8,10 +8,9 @@ for line in document:
     charge = words[4].replace('$', '')
     charges[chargeType] = charges.get(chargeType, 0) + float(charge)
 
-print(str(charges))
-# document.write('\n')
-# for x, y in charges.items():
-#     newline = str(x, y)
-#     document.write(newline)
+document.write('\n\n')
+for x, y in charges.items():
+    newline = x + '\t' + str(y) + '\n'
+    document.write(newline)
 
-# document.close()
+document.close()
