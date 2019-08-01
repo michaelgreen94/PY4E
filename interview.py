@@ -1,3 +1,4 @@
+# PROBLEM 1
 # You are given two linked-lists representing two non-negative integers. The digits are stored in reverse order and each of their nodes contain
 #  a single digit. Add the two numbers and return it as a linked list.
 
@@ -72,20 +73,13 @@ l2.prefixNode(5)
 l2.prefixNode(6)
 l2.prefixNode(4)
 
-l3 = linked_list()
-l3.appendNode(13)
-l3.appendNode(21)
-l3.appendNode(1)
-l3.appendNode(3)
-
 result = linkedSolution().addTwoNumbers(l1.head, l2.head)
 while result:
     print('linkedSolution - ' + str(result.val))
     result = result.next
 
-# finished coding on 07/31/19
 
-
+# PROBLEM 2
 # Given a string, find the length of the longest substring without repeating characters.
 
 
