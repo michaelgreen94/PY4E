@@ -24,8 +24,9 @@ class linked_list:
 
     # This method first assigns the value of self.head to currNode, then it checks to see if currNode is true or false. If false it calls ListNode to
     # create a new node with its passed value and assigns it to self.head. The next time this method is called currNode will not be false, it will be
-    # the previous node created, causing it to hit our if condition as true. The while loop will run as long as the currNode.next value isnt None, and
-    # it will then assign currNode.next to the currNode. Finally it wall call ListNode created the next Node and assign its value to currNode.next.
+    # the previous node created, causing it to hit our if condition as true. The while loop will run as long as the currNode.next value is not None,
+    # (the purpose is to dig through the nodes until it finds the last one) it will then assign currNode.next to the currNode.
+    # Finally it wall call ListNode created the next Node and assign its value to currNode.next.
     # This makes the first node created the head, and every node created after that, will be the next of the previous.
     def appendNode(self, val):
         currNode = self.head
